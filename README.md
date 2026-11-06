@@ -1,2 +1,2 @@
 # Git Practice 
-Name: Lee Yeonwoo Student ID: 12345678 
+Name: Lee Yeonwoo Student ID: 32243270 
