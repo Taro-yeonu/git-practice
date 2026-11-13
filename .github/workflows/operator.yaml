@@ -27,4 +27,12 @@ jobs:
         run: |
           echo "Group 1: ${{ (true || false) && false }}"
           echo "Group 2: ${{ true || (false && false) }}"
-          echo "Group 3: ${{ (10 > 5) && (20 > 10) }}" 
+          echo "Group 3: ${{ (10 > 5) && (20 > 10) }}"
+
+      # 4. 인덱스 (Index)
+      - name: Index
+        run: |
+          echo "First: ${{ fromJSON('["Apple","Banana","Cherry"]')[0] }}"
+          echo "Second: ${{ fromJSON('["Apple","Banana","Cherry"]')[1] }}"
+          echo "Third: ${{ fromJSON('["Apple","Banana","Cherry"]')[2] }}"
+
